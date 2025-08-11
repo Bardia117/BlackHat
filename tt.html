@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بانک اطلاعاتی هکری</title>
+  <style>
+    :root{
+      --bg:#000;
+      --card:#0a0a0a;
+      --accent:#00ff00;
+      --muted:#00cc88;
+      --leader:#ff0033;
+      --shadow: 0 8px 20px rgba(0,255,0,0.15);
+      --radius:18px;
+      font-family: monospace;
+    }
+    body{
+      background: var(--bg);
+      margin:0;
+      padding:32px;
+      color:var(--accent);
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+    }
+    header{
+      text-align:center;
+      margin-bottom:22px;
+    }
+    header h1{
+      margin:0;
+      font-size:26px;
+      color:var(--accent);
+      text-shadow: 0 0 10px var(--accent);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+      gap:18px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow);
+      border: 1px solid var(--accent);
+      transition:transform .18s ease;
+    }
+    .card:hover{ transform: translateY(-6px); }
+    .leader-card{
+      border-color: var(--leader);
+      box-shadow: 0 0 15px rgba(255,0,51,0.3);
+    }
+    .avatar{
+      width:72px;
+      height:72px;
+      border-radius:50%;
+      background:var(--accent);
+      color:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:22px;
+      float:left;
+      margin-left:12px;
+    }
+    .leader-card .avatar{
+      background: var(--leader);
+      color: white;
+    }
+    .name{
+      font-size:18px;
+      font-weight:700;
+      margin-bottom:6px;
+    }
+    .leader-card .name{
+      color: var(--leader);
+      text-shadow: 0 0 8px var(--leader);
+    }
+    .roles{
+      margin-top:8px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:flex-end;
+    }
+    .tag{
+      background:#001900;
+      color:var(--muted);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid var(--accent);
+    }
+    .leader-card .tag{
+      border-color: var(--leader);
+      color: #ff99aa;
+    }
+    .phone-area{
+      margin-top:12px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:flex-end;
+    }
+    .phone-area input{
+      direction:ltr;
+      padding:8px 10px;
+      border-radius:10px;
+      border:1px dashed var(--accent);
+      background:black;
+      color:var(--accent);
+      width:140px;
+      font-size:14px;
+    }
+    .phone-placeholder{
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>⚡ بانک اطلاعاتی هکری ⚡</h1>
+    </header>
+
+    <main class="grid">
+      <section class="card leader-card">
+        <div class="avatar">ا</div>
+        <div class="name">ادلر (رهبر تیم ادلر)</div>
+        <div class="roles">
+          <span class="tag">هک و امنیت</span>
+          <span class="tag">فیل</span>
+          <span class="tag">چیت</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+
+      <section class="card leader-card">
+        <div class="avatar">س</div>
+        <div class="name">سردار (رهبر عدالت شیطان)</div>
+        <div class="roles">
+          <span class="tag">نفوذ</span>
+          <span class="tag">جاسوسی</span>
+          <span class="tag">چیت</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="avatar">م</div>
+        <div class="name">متین</div>
+        <div class="roles">
+          <span class="tag">نفوذ</span>
+          <span class="tag">چیتر</span>
+          <span class="tag">ترموکس</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="avatar">م</div>
+        <div class="name">ممد</div>
+        <div class="roles">
+          <span class="tag">چیتر</span>
+          <span class="tag">کصخل</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="avatar">م</div>
+        <div class="name">ماردین</div>
+        <div class="roles">
+          <span class="tag">چیتر</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+
+      <section class="card leader-card">
+        <div class="avatar">د</div>
+        <div class="name">دیول (رهبر بلک هت)</div>
+        <div class="roles">
+          <span class="tag">هک و امنیت</span>
+          <span class="tag">چیت</span>
+        </div>
+        <div class="phone-area">
+          <label class="phone-placeholder">شماره:</label>
+          <input placeholder="09xx-xxx-xxxx" />
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
